@@ -1,9 +1,9 @@
-/* Exercises 1-3 and 1-4. */
+/* Exercise 1-3. */
 #include <stdio.h>
 
 main()
 {
-  int fahr, celsius;
+  float fahr, celsius;
   int lower, upper, step;
 
   lower = 0;    // Lower limit of temperature table.
@@ -11,9 +11,10 @@ main()
   step = 20;    // Step size.
 
   fahr = lower;
+  printf("Fahrenheit\tCelsius\n\n");
   while (fahr <= upper) {
-    celsius = 5 * (fahr - 32) / 9;
-    printf("%d\t%d\n", fahr, celsius);
+    celsius = (5.0/9.0) * (fahr - 32.0);
+    printf("%10.0f\t%7.1f\n", fahr, celsius);
     fahr = fahr + step;
   }
 }
