@@ -1,16 +1,12 @@
 /* Sample from 1.5.1 File Copying */
 # include <stdio.h>
 
-// Copy input to output, version 1.
+// Copy input to output, version 2.
 
 main()
 {
   int c;
 
-  c = getchar();
-  while (c != EOF)
-  {
+  while ((c = getchar()) != EOF)
     putchar(c);
-    c = getchar();
-  }
 }
