@@ -1,13 +1,12 @@
 /* Example from Section 1.5.2 */
 # include <stdio.h>
 
-// Count characters in input, version 1.
+// Count characters in input, version 2.
 main()
 {
-  long nc;
+  double nc;
 
-  nc = 0;
-  while (getchar() != EOF)
-    ++nc;
-  printf("%ld\n", nc);
+  for (nc = 0; getchar != EOF; ++nc)
+    ;
+  printf("%.0f\n", nc);
 }
